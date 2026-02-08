@@ -33,7 +33,7 @@ st.set_page_config(page_title="Stock Time-Series Forecast", layout="wide")
 
 
 @st.cache_data
-def load_data(path=r"P639 DATASET.csv"):
+def load_data(path=r"dataset/P639 DATASET.csv"):
     df = pd.read_csv(path)
     df["Date"] = pd.to_datetime(df["Date"], dayfirst=True)
     df = df.set_index("Date").sort_index()
