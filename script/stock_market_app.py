@@ -20,8 +20,8 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 # ================================================================================
 
-MODEL_PATH = r"gru_model.h5"
-SCALER_PATH = r"scaler.pkl"
+MODEL_PATH = r"script/gru_model.h5"
+SCALER_PATH = r"script/scaler.pkl"
 
 full_feature_cols = [
     "RSI_14", "MACD", "MACD_signal", "MACD_histogram", "OBV",
